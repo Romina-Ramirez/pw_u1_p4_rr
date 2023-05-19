@@ -1,0 +1,65 @@
+.menu li {
+    list-style: none;
+    display: inline-block;
+    /*border: solid black;*/
+    border: 1px dashed black;
+    /*margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin: 10px 30px;
+    margin: 10px 20px 30px 50px;*/
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cabecera h1 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: tomato;
+}
+
+.menu {
+    background-color: moccasin;
+    text-align: left;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article {
+    display: block;
+}
+
+body {
+    text-align: center;
+    background: mediumaquamarine;
+}
+
+.formulario {
+    width: 900px;
+    border: 1px double black;
+    margin: 15 px auto;
+}
+
+.section {
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+
+article {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: cornflowerblue;
+}
+
+/*h1, h2, h3 {
+    color: mediumvioletred;
+}*/
