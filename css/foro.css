@@ -10,7 +10,7 @@
     margin: 10px 30px;
     margin: 10px 20px 30px 50px;*/
     margin: 5px;
-    padding: 5px 5px;
+    padding: 5px;
     border-radius: 5px;
     text-align: center;
 }
@@ -44,7 +44,7 @@ body {
 .formulario {
     width: 900px;
     border: 1px double black;
-    margin: 15 px auto;
+    margin: 15px auto;
 }
 
 .section {
@@ -58,6 +58,27 @@ article {
     padding: 20px;
     margin-bottom: 25px;
     background: cornflowerblue;
+}
+
+.referencias {
+    border: 1px dashed black;
+    width: 200px;
+    float: left;
+    margin-top: 165px;
+    margin-left: 18px;
+}
+
+article footer {
+    text-align: right;
+}
+
+.pie {
+    clear: both;
+}
+
+img {
+    width: 250px;
+    height: 150px;
 }
 
 /*h1, h2, h3 {
