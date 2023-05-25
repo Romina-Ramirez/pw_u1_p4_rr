@@ -6,6 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA</title>
+    <script>
+        function leerNum(idCampo) {
+            return parseInt(document.getElementById(idCampo).value);
+        }
+
+        function mostrar(operacion) {
+            return document.getElementById('idImpresionResultado').innerHTML = operacion;
+        }
+
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        function sumarNumeros() {
+            document.getElementById('idImpresionResultado').innerHTML = sumar(leerNum('idnum1'), leerNum('idnum2'));
+
+        }
+
+        function restar(a, b) {
+            return a - b;
+        }
+
+        function restarNumeros() {
+            document.getElementById('idImpresionResultado').innerHTML = restar(leerNum('idnum1'), leerNum('idnum2'));
+        }
+
+        function multiplicar(a, b) {
+            return a * b;
+        }
+
+        function multiplicarNumeros() {
+            document.getElementById('idImpresionResultado').innerHTML = multiplicar(leerNum('idnum1'), leerNum('idnum2'));
+        }
+
+        function dividir(a, b) {
+            return a / b;
+        }
+
+        function dividirNumeros() {
+            document.getElementById('idImpresionResultado').innerHTML = dividir(leerNum('idnum1'), leerNum('idnum2'));
+        }
+    </script>
 </head>
 
 <body>
@@ -17,12 +59,17 @@
         <label for="idnum2">Número 2</label>
         <input id="idnum2" type="number">
 
-        <button onclick="document.getElementById('labelResultado').innerHTML='Cambio texto'">Sumar</button>
-        <button>Restar</button>
-        <button>Multiplicar</button>
-        <button>Dividir</button>
+        <button onclick="document.getElementById('labelResultado').style.backgroundColor='moccasin'">JS online
+            1</button>
+        <button onclick="document.getElementById('labelResultado').style.color='cornflowerblue'">JS online 2</button>
+
+        <button onclick="sumarNumeros()">Sumar</button>
+        <button onclick="restarNumeros()">Restar</button>
+        <button onclick="multiplicarNumeros()">Multiplicar</button>
+        <button onclick="dividirNumeros()">Dividir</button>
 
         <label id="labelResultado" for="">Resultado: </label>
+        <label id="idImpresionResultado" for=""></label>
 
     </section>
     <footer></footer>
