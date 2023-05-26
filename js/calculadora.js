@@ -39,7 +39,9 @@ function dividirNumeros() {
 }
 
 function eliminarElemento(){
-    document.getElementById('idEliminar').remove;
+    document.getElementById('idEliminar').remove();
+    console.log(document.getElementById('idEliminar'))
+    console.log('Test')
 }
 
 function insertarElemento(){
