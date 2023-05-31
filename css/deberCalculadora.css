@@ -1,0 +1,82 @@
+* {
+    font-family: Consolas;
+    color: #ffffff;
+}
+
+.titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.tarea {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+body {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.calculadora {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 320px;
+    background-color: #009199;
+    border: 10px solid #004e52;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.pantalla {
+    background-color: #bcfcffa0;
+    border: 5px solid #4a878da0;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 20px;
+    height: 25px;
+    color: black;
+}
+
+.fila {
+    margin-bottom: 10px;
+}
+
+.boton {
+    width: 71px;
+    height: 40px;
+    margin: 1px;
+    font-size: 20px;
+    border: 2px solid #830233d9;
+    background-color: #e21664;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px 0px #004e52;
+}
+
+.boton:hover {
+    background-color: #ba1252;
+}
+
+#operador {
+    background-color: #8742ff;
+    border: 2px solid #5a2baa;
+    color: #ffffff;
+}
+
+#operador:hover {
+    background-color: #6733c1;
+}
+
+#igual {
+    background-color: #ff883e;
+    border: 2px solid #924e23;
+    color: #ffffff;
+}
+
+#igual:hover {
+    background-color: #c06730;
+}
