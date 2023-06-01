@@ -1,82 +1,53 @@
 * {
+    color: black;
+    text-align: center;
     font-family: Consolas;
-    color: #ffffff;
 }
 
-.titulo {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-.tarea {
-    font-family: 'Times New Roman', Times, serif;
+.taller {
     font-style: italic;
 }
 
-body {
-    background-color: #ffffff;
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.calculadora {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 320px;
-    background-color: #009199;
-    border: 10px solid #004e52;
-    padding: 10px;
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    /*grid-template-rows: ;*/
+    background-color: rgb(255, 187, 97);
+    padding: 20px;
     border-radius: 20px;
+    border: 10px solid rgb(146, 105, 51);
+    box-shadow: 10px 10px 10px 1px rgb(60, 43, 21);
+}
+
+.cero {
+    grid-column: span 2;
 }
 
 .pantalla {
-    background-color: #bcfcffa0;
-    border: 5px solid #4a878da0;
-    padding: 10px 5px;
-    margin-bottom: 10px;
+    grid-column: span 4;
+    border: 2px solid rgb(146, 105, 51);
+    background-color: rgb(253, 207, 147);
+    margin-bottom: 10px; 
     text-align: right;
-    font-size: 20px;
-    height: 25px;
-    color: black;
-}
-
-.fila {
-    margin-bottom: 10px;
+    padding: 5px 5px;
 }
 
 .boton {
-    width: 71px;
-    height: 40px;
-    margin: 1px;
-    font-size: 20px;
-    border: 2px solid #830233d9;
-    background-color: #e21664;
-    color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 7px 7px 10px 0px #004e52;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    margin: 4px;
+    background-color: rgb(233, 50, 142);
+    box-shadow: 5px 5px 10px 0px rgb(153, 26, 89);
+    color: aliceblue;
 }
 
 .boton:hover {
-    background-color: #ba1252;
-}
-
-#operador {
-    background-color: #8742ff;
-    border: 2px solid #5a2baa;
-    color: #ffffff;
-}
-
-#operador:hover {
-    background-color: #6733c1;
-}
-
-#igual {
-    background-color: #ff883e;
-    border: 2px solid #924e23;
-    color: #ffffff;
-}
-
-#igual:hover {
-    background-color: #c06730;
+    background-color: rgb(170, 25, 97);
 }
